@@ -1,0 +1,28 @@
+
+function translatePigLatin(str) {
+  var pulledStr;
+  if (str.charAt(0)=="a") {
+    return str+"way";
+  }
+  if (str.charAt(0)=="e"){
+    return str+"way";
+  }
+  if (str.charAt(0)=="i"){
+    return str+"way";
+  }
+  if (str.charAt(0)=="o"){
+    return str+"way";
+  }
+  if (str.charAt(0)=="u"){
+    return str+"way";
+  }
+  if (str.substr(0,2)=="gl"){
+    str=str.substr(2,str.length)+str.charAt(0)+str.charAt(1)+"ay";
+  }
+  else{
+  str=str.substr(1,str.length)+str.charAt(0)+"ay";
+  }
+  return str;
+}
+
+translatePigLatin("glove");
